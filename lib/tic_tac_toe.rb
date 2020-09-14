@@ -56,7 +56,11 @@ def display_board
       index = input_to_index(user_input)
       token = current_player
       if valid_move?(index)
+<<<<<<< HEAD
         move(index, token) 
+=======
+        move(index, token = "X") 
+>>>>>>> a2e3ab9c623a224c8c1adbf78b9e9988a7b3fdf8
         display_board
         else
           turn 
@@ -114,9 +118,15 @@ def play
 end
 
   if won? 
+<<<<<<< HEAD
   puts "Congratulations #{winner}!"
   elsif draw? 
   puts "Cat's Game!"
+=======
+  puts "Congratulation Winner!"
+  elsif draw? 
+  puts "The game ended in a draw."
+>>>>>>> a2e3ab9c623a224c8c1adbf78b9e9988a7b3fdf8
   end
 end
 end
